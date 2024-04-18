@@ -1,3 +1,8 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+// Name         : Thirumoorthy p                                                         //                                                                                      //
+// FileName     : ADC                                                                    //
+// Description  : convert the analog signal to digital signal                            //
+///////////////////////////////////////////////////////////////////////////////////////////
 #include "baseConfig.h"
 void rcc_config(void)
 {
