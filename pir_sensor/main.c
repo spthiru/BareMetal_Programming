@@ -1,10 +1,9 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+// Name         : Thirumoorthy p                                                         //                                                                                      //
+// FileName     : pir_sensor                                                             //
+// Description  : detecting human heat any blowing the led                               //
+///////////////////////////////////////////////////////////////////////////////////////////
 #include "header.h"
-void sys_tick_tmr(void)
-{
-   int i;
-   for(i = 0; i < 1000000; i++);
-}
-
 void rcc_config(void)
 {
    *RCC_RC = *RCC_RC & (~0x00010000);//CLEAR THE PARTICULAR BIT IN RCC_RC
