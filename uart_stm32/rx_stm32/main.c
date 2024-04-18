@@ -1,3 +1,8 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+// Name         : Thirumoorthy p                                                         //                                                                                      //
+// FileName     : rx_stm32                                                               //
+// Description  : receving data from uart modeule                                        //
+///////////////////////////////////////////////////////////////////////////////////////////
 #include "baseConfig.h"
 void rcc_config(void)
 {
