@@ -1,3 +1,9 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+// Name         : Thirumoorthy p                                                         //                                                                                      //
+// FileName     : systick_timer                                                          //
+// Description  : using systick timer for delay purpose to blink led                     //
+///////////////////////////////////////////////////////////////////////////////////////////
+
 #include "header.h"
 void sys_tick_tmr(void)
 {
