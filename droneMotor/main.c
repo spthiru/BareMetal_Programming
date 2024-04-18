@@ -1,3 +1,8 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+// Name         : Thirumoorthy p                                                         //                                                                                      //
+// FileName     : DroneMotor                                                             //
+// Description  : controlling drone motor using PWM and ADC                              //
+///////////////////////////////////////////////////////////////////////////////////////////
 #include "baseConfig.h"
 void rcc_config(void)
 {
