@@ -1,3 +1,8 @@
+///////////////////////////////////////////////////////////////////////////////////////////
+// Name         : Thirumoorthy p                                                         //                                                                                      //
+// FileName     : 8x8_matirx                                                             //
+// Description  : using 8x8 led matrix blinking diffrent pattern                         //
+///////////////////////////////////////////////////////////////////////////////////////////
 //clock config
 volatile unsigned int *RCC_RC      = (volatile unsigned int*)0x40023800;
 volatile unsigned int *RCC_CFGR    = (volatile unsigned int *)0x40023808;
