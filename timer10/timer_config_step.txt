@@ -1,0 +1,34 @@
+//timer 10 configuration steps//
+-------------------------------
+  step1  : disable counter on TIMx_CR1 register.
+  step2  : enable update disable on TIMx_CR1 register.
+  step3  : disable Update request source on  TIMx_CR1 register.
+  step4  : enable Auto-reload preload enable.
+  step5  : set counter value.
+  step6  : set prescalar value.
+  step7  : set auto reload value.
+  step8  : enable counter.
+  step9  : untill wait update interrupt flag set 1.
+  step10 : clear the update interrupt flag value.
+
+ caluculation of timer 10.
+-------------------------
+ 
+10 millisecound:
+---------------
+
+            requried delay
+  reload  = -------------- - 1
+               frequency
+    
+	  = requried delay * frequency - 1
+	  
+	  = 100(ms)x10^-3 * 25(mhz)x10^6 - 1
+
+	  = 100 * 25 x 10^3 - 1
+
+	  = 2500 x 10^3 -1
+	  
+	  = 2500000 -1
+
+	  = 2499999.
