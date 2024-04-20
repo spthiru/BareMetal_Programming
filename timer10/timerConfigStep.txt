@@ -1,0 +1,30 @@
+TIMER 10/11 COCFIGURATION STEP:
+------------------------------
+	step1 : disable counter bit.
+
+	step2 : enable update disabe bit.(UEV disabled. No UEV is generated, shadow registers keep their value (ARR, PSC,CCRx). The counter and th                prescaler are reinitialized if the UG bit is set.).
+
+	step3 : diasble Update request source bit.
+
+	step4 : enable Auto-reload preload enable.
+
+	step5 : set count value for TIMx_CNT register.
+
+	step6 : set prescalar value (TIMx_PSC) register.
+
+	step7 : set auto reload value (TIMx_ARR) register.
+
+	step8 : enable counter bit.
+
+	step9 : wait untill TIMx_SR 0th bit set 0.
+
+	step10 : clear the status register(TIMx_SR) 0th bit.
+
+note:
+  base address of TIM10 : 0x40014400 - 0x400147FF
+  bus                   : APB2
+
+  base address of TIM11 : 0x40014800 - 0x40014BFF
+  bus                   : APB2
+
+  timer10 enable (RCC_APB2ENR);
