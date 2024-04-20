@@ -1,0 +1,31 @@
+about ADC:
+---------
+     Analog-to-Digital converters (ADC) translate analog signals,
+real world signals like temperature, pressure, voltage, current, distance, or light intensity, 
+into a digital representation of that signal.
+This digital representation can then be processed, manipulated, computed, transmitted or stored.
+
+Acquisition time:
+----------------
+  Acquisition time (sampling time) is the time required for the Analog-to-Digital Converter (ADC) to capture the input voltage during sampling.
+The acquisition time of a Successive Approximation Register (SAR) ADC is the amount of time required to charge
+the holding capacitor (CHOLD) on the front end of an ADC.
+
+
+///////////////////ADC Configuration steps in stm32////////////////
+
+step 1  : enable ADC clock
+step 2  : set anolog input pin to analog mode
+step 3  : clear the CR1 register(it's there in the adc register).
+step 4  : enable A/D converter
+step 5  : set resolution value for our requriedments.
+step 6  : set conversion mode to single.
+step 7  : start the regular conversion. 
+step 8  : set data allignment for right.
+step 9  : select channel sample time to 15 cycles.
+
+step 10 : again start conversion. 
+step 11 : untill wait for EOC bit set as 1
+step 12 : read the data to ADC_DR register.
+
+////////////////////////END/////////////////////////////////////////
